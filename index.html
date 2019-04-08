@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Countries Information</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+    crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <main class="container">
+    <div class="chart">
+      <div class="visual">
+        <button class="btn top-population toggle">Top 10
+            Population</a></button>
+        <button class="btn top-languages toggle">Top 10 languages</button>
+      </div>
+    </div>
+    <div>
+      <div class="head">
+        <h2 class="glow">Countries<br />of the World<br />Information</h2>
+        <p class="numCountries">Currently, we have <span class="result"></span>
+          countries</p>
+        <input id="search-input" type="text" autocomplete="off"
+          placeholder="Name, City or Languages ..." />
+
+        <div class="buttons">
+          <button class="btn" id="sortName">Sort by Name A-Z</button>
+          <button class="btn" id="sortCapital">Sort by Capital A-Z</button>
+          <button class="btn" id="sortPopulation">Sort by Population ↑</button>
+        </div>
+
+
+      </div>
+
+      <div class="visual-population">
+        <div class="top-10">
+          <div class="total-population"></div>
+          <div class="population-bar-chart"></div>
+        </div>
+      </div>
+
+      <div class="visual-languages">
+        <div class="top-10">
+          <div class="total-languages"></div>
+          <div class="languages-bar-chart"></div>
+        </div>
+      </div>
+
+      <div class="countries-wrapper"></div>
+    </div>
+  </main>
+
+
+<script src="./js/animation.js"></script>
+  <script src="./js/countriesObject.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
